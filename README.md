@@ -54,7 +54,7 @@ For each algorithm we can select 4 different configurations and register their t
 
 To run validation loss plot or validation accuracy please run the following command:
 
-`python3 main_hypertunning_algo.py {path_to_algorithm} '[Bool,Bool]' '[Bool,Bool]'`
+`python3 main_hypertunning_algo.py {path_to_algorithm} '[Bool,Bool]' {name_of_output} '[Bool,Bool]'`
 
 such that path_to_algorithm determines where to find the files for this algorithm
 such that the first list of Boolean (True/False) indicates if respectively we execute and save the accuracy and/or the loss curve(s)
