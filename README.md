@@ -44,7 +44,7 @@ The run is executed with run.py file. Here an example of how use it:
 For the same reason than before, we could not pass the learning rate or backbones as an input argument when running an experiment. We then need to change manually these parameters in the files 'conf/main.yaml' and 'conf/dataset/break_his.yaml'. The train loss, validation loss and test accuracy can then be found in wandb.
 
 For each algorithm we can select 4 different configurations and register their train loss and val accuracy from wandb into the folder results. Please try to keep this configuration :
-*Results*
+*Results*\\
     *MX* with M a magnification (40,100,200,400)
         *CNN* with CNN beeing conv_next or efficientnet_b0
             *algorithm* with algorithm beeing baseline, baseline_pp, maml, matchingnet or protonet
