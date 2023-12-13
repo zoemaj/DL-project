@@ -1,7 +1,7 @@
 defaults:
   - dataset: tabula_muris
   - method: maml
-  #- magnification: 40 #QUESTION
+
 
 model: FCNet
 n_way: ??? #this will defined in the dataset
