@@ -67,7 +67,7 @@ To run validation loss plot or validation accuracy please run the following comm
 
 `python3 main_hypertunning_algo.py {path_to_comparison} '[Bool,Bool]' '[Bool,Bool]'`
 
-such that path_to_algorithm determines where to find the files for this algorithm
+such that path_to_comparison determines where to find the files for this algorithm
 such that the first list of Boolean (True/False) indicates if respectively we execute and save the accuracy and/or the loss curve(s)
 such that the second list of Boolean (True/False) indicates if we want to visualise the accuracy and/or the loss curve(s)
 
