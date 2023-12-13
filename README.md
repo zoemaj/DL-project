@@ -5,16 +5,19 @@
 
 This table shows which files need to be added to the code infrastructure, as well as the folder where to store it. The tumor `datasets/tumour` folder doesn't exist yet and needs to be added to the infrastructure manually.
 
+*Folder*:`/conf/dataset`
+  *File*:`break_his.yaml`
+*Folder*:`/datasets/tumors`
+  *File*:`break_his.py`  
+*Folder*:`/datasets/tumors`
+  *File*:`utils.py` 
 
-| Filename                      | Folder 
-  
-| `break_his.yaml`              | `/conf/dataset`
-| `break_his.py`                | `/datasets/tumour`
-| `utils.py`                    | `/datasets/tumour`
-| `main_hypertunning_algo.py`   | 
-| `hypertunning_algo.py`        | 
-| `main_comparison_algo.py`     | 
-| `comparison_algo.py`          | 
+Additionnaly here are new file usefull for graphic representation:
+
+*`main_hypertunning_algo.py`*
+*`hypertunning_algo.py`*     
+*`main_comparison_algo.py` *
+*`comparison_algo.py`*
 
 
 ## Downloading the dataset
