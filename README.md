@@ -3,7 +3,7 @@
 
 ## Adding Files
 
-This table shows which files need to be added to the code infrastructure, as well as the folder where to store it. The tumor `datasets/tumour` folder doesn't exist yet and needs to be added to the infrastructure manually.
+This table shows which files need to be added to the code infrastructure, as well as the folder where to store it. The tumor `datasets/tumors` folder doesn't exist yet and needs to be added to the infrastructure manually.
 
 *`/conf/dataset/break_his.yaml`*
 *`/datasets/tumors/break_his.py`* 
@@ -28,7 +28,7 @@ Once the files and images are stored as described, the code can be run. The firs
 
 ## Changing magnification and pretrained CNN
 
-As the overall code structure should not be changed we could not pass the magnification size or the embedding CNN name as an input argument when running an experiment. Consequently, the code needs to be modified minorly to choose the different magnification and which embedding CNN use. In the `datasets/tumour/break_his.py` file change lines 38 and 78 `self.magnification = {your_desired_magnification}` and `self.pretrained_model_name = {Name_embedding_CNN}` as respectively an integer value (40, 100, 200, 400) and string {'convnext_base','efficientnet_b0'}. 
+As the overall code structure should not be changed we could not pass the magnification size or the embedding CNN name as an input argument when running an experiment. Consequently, the code needs to be modified minorly to choose the different magnification and which embedding CNN use. In the `datasets/tumors/break_his.py` file change lines 38 and 78 `self.magnification = {your_desired_magnification}` and `self.pretrained_model_name = {Name_embedding_CNN}` as respectively an integer value (40, 100, 200, 400) and string {'convnext_base','efficientnet_b0'}. 
 
 ## Running the code
 The run is executed with run.py file. Here an example of how use it:
