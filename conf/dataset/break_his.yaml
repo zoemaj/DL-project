@@ -1,0 +1,23 @@
+# @package _global_
+
+defaults:
+  - classification_base
+
+dataset:
+  name: break_his
+  simple_cls:
+    _target_: datasets.tumors.break_his.BHSimpleDataset
+
+  set_cls:
+    _target_: datasets.tumors.break_his.BHSetDataset
+
+backbone:
+  _target_: backbones.fcnet.FCNet
+  layer_dim: [1024]
+
+# For baseline, how many total classes
+train_classes: 8
+
+n_way: 2
+n_shot: 10
+n_query: 15

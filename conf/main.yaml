@@ -1,0 +1,39 @@
+defaults:
+  - dataset: tabula_muris
+  - method: maml
+  #- magnification: 40 #QUESTION
+
+model: FCNet
+n_way: ??? #this will defined in the dataset
+n_shot: ???
+n_query: ???
+
+mode: train #by defaut, need to precise it in the run if want test
+
+exp:
+  name: ???
+  save_freq: 10
+  resume: false
+  seed: 42
+  val_freq: 1
+
+
+optimizer: Adam
+lr: 0.001
+optimizer_cls:
+  _target_: torch.optim.${optimizer}
+  lr: ${lr}
+
+checkpoint:
+  dir: checkpoints/${exp.name}/${dataset.name}/${method.name}_${model}
+  test_iter: best_model
+  time: latest
+
+wandb:
+  project: fewshot_is_fun
+  entity: ramequin
+  mode: "online" # Can set to offline, disabled
+
+iter_num: 600
+
+#example of command used: python run.py exp.name={exp_name} method=maml dataset=tabula_muris mode=test
