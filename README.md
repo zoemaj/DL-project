@@ -6,7 +6,7 @@
 This table shows which files need to be added to the code infrastructure, as well as the folder where to store it. The tumor `datasets/tumour` folder doesn't exist yet and needs to be added to the infrastructure manually.
 
 *`/conf/dataset/break_his.yaml`*
-*`/datasets/tumors/break_his.py` * 
+*`/datasets/tumors/break_his.py`* 
 *`/datasets/tumors/utils.py`* 
 
 Additionnaly here are new file usefull for graphic representation:
