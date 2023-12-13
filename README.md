@@ -1,5 +1,8 @@
 # DL-project
 # Few Shot adding Break His to the Benchmark
+Accurate tumor detection is vital in cancer diagnosis, but some rare cancers lack sufficient data for traditional deep learning. Few-Shot Learning offers a promising solution. This project expands a benchmark, using a breast tumor dataset, to improve few-shot histology image classification across varying microscope magnifications with three different meta-learning and two baseline methods. 
+
+The dataset comes from the Laboratory "Visão Robótica Imagemn" under the name Breast Cancer Histopathological Database (BreakHis).
 
 ## Adding Files
 
@@ -18,6 +21,7 @@ Additionnaly here are new file usefull for graphic representation:
 
 
 ## Downloading the dataset
+
 
 The dataset needs to be dowloaded and unzipped manually, in a similar way as SwissProt. The download link can be found in the `break_his.py` file and also here: `https://drive.google.com/file/d/1FlHhtTXzKgQCjxn18j1b4T3Q5FhylIn4/view`. It should be unzipped and stored in the folder `/data/break_his`.
 
