@@ -3,6 +3,7 @@
 Accurate tumor detection is vital in cancer diagnosis, but some rare cancers lack sufficient data for traditional deep learning. Few-Shot Learning offers a promising solution. This project expands a benchmark, using a breast tumor dataset, to improve few-shot histology image classification across varying microscope magnifications with three different meta-learning and two baseline methods. 
 
 The dataset comes from the Laboratory "Visão Robótica Imagemn" under the name Breast Cancer Histopathological Database (BreakHis).
+https://web.inf.ufpr.br/vri/databases/breast-cancer-histopathological-database-breakhis/
 
 ## Adding Files
 
