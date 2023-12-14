@@ -163,10 +163,13 @@ def execute(path_folder, list_application, plots_name, list_visualisation=[False
             #with specific orders: file that end with 1e-2-1024, 1e-2, 1e-3-1024, 1e-3
             if file.startswith('loss') and file.endswith('1e-2-1024.csv'):
                 loss_list.append(pd.read_csv(path_folder+'/'+file))
+        for file in os.listdir(path_folder):
             if file.startswith('loss') and file.endswith('1e-2.csv'):
                 loss_list.append(pd.read_csv(path_folder+'/'+file))
+        for file in os.listdir(path_folder):
             if file.startswith('loss') and file.endswith('1e-3-1024.csv'):
                 loss_list.append(pd.read_csv(path_folder+'/'+file))
+        for file in os.listdir(path_folder):
             if file.startswith('loss') and file.endswith('1e-3.csv'):
                 loss_list.append(pd.read_csv(path_folder+'/'+file))
 

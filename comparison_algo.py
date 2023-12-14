@@ -131,15 +131,40 @@ def execute(path_folder, list_application, plots_name, list_visualisation=[False
         #load all files in folder path_folder that begin with 'accuracy-'
         accuracy_list=[]
         for file in os.listdir(path_folder):
-            if file.startswith('accuracy-'):
+            if file.startswith('accuracy-baseline_pp'):
                 accuracy_list.append(pd.read_csv(path_folder+'/'+file))
+        for file in os.listdir(path_folder):
+            if file.startswith('accuracy-baseline-'):
+                accuracy_list.append(pd.read_csv(path_folder+'/'+file))
+        for file in os.listdir(path_folder):
+            if file.startswith('accuracy-matchingnet'):
+                accuracy_list.append(pd.read_csv(path_folder+'/'+file))
+        for file in os.listdir(path_folder):
+            if file.startswith('accuracy-maml'):
+                accuracy_list.append(pd.read_csv(path_folder+'/'+file))
+        for file in os.listdir(path_folder):
+            if file.startswith('accuracy-protonet'):
+                accuracy_list.append(pd.read_csv(path_folder+'/'+file))
+
         #plot the accuracy
         plot_accuracy(accuracy_list,path_folder+'/'+plots_name+'-accuracy.eps',list_visualisation[0])
     if list_application[1]:
         #load all files in folder path_folder that begin with 'loss-'
         loss_list=[]
         for file in os.listdir(path_folder):
-            if file.startswith('loss-'):
+            if file.startswith('loss-baseline_pp'):
+                loss_list.append(pd.read_csv(path_folder+'/'+file))
+        for file in os.listdir(path_folder):
+            if file.startswith('loss-baseline-'):
+                loss_list.append(pd.read_csv(path_folder+'/'+file))
+        for file in os.listdir(path_folder):
+            if file.startswith('loss-matchingnet'):
+                loss_list.append(pd.read_csv(path_folder+'/'+file))
+        for file in os.listdir(path_folder):
+            if file.startswith('loss-maml'):
+                loss_list.append(pd.read_csv(path_folder+'/'+file))
+        for file in os.listdir(path_folder):
+            if file.startswith('loss-protonet'):
                 loss_list.append(pd.read_csv(path_folder+'/'+file))
         #plot the loss
         plot_loss(loss_list,path_folder+'/'+plots_name+'-loss.eps',list_visualisation[1])
